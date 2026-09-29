@@ -3,12 +3,12 @@ However, since browsers do not natively compile LaTeX notation (like \begin{alig
 If your pages already look perfect in your browser when you double-click them locally, you likely already have the rendering script inside your HTML files. If they don't render properly when loaded from your new domain, you just need to include the script below.
 ## The Standard Fix for Math on GitHub Pages
 To guarantee that your complex math derivations, matrices, and symbols render beautifully for anyone visiting wozlean.com, ensure that the following standard CDN link is inside the <head> section of your HTML files [INDEX]:
-
+```html
 <!-- Include MathJax script inside your <head> tag -->
 <script type="text/javascript" id="MathJax-script" async 
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
-
+```
 ## Tips for Complex Mathematical Overlays
 Since you mentioned using heavily nested equations or logical dependency proofs, keep these two browser constraints in mind:
 
